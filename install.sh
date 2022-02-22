@@ -44,7 +44,7 @@ cp -r .config/* ~/.config
 nvim +PlugInstall +qall
 
 # install zsh
-# sudo apt-get --yes --force-yes install zsh
+yes | sudo apt-get install zsh -y
 # install oh my zsh
 rm -rf "$HOME/.oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -54,5 +54,5 @@ cp -r .config/oh-my-zsh/* ~/.oh-my-zsh
 
 # don't know why this line below does not work
 # sudo chsh -s /usr/bin/zsh $USERNAME
-sudo chsh -s /usr/bin/zsh codespace
-
+# sudo chsh -s /usr/bin/zsh codespace
+#
